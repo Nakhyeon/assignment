@@ -6,7 +6,7 @@
 }
 
 :root {
-  --DefaultColor : #ff0406 ;
+  --DefaultColor : rgb(255, 4, 6) ;
   --gradiColor : #ff6674 ;
 }
 
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background:linear-gradient(#ff0406, #ff6674);
+  background:linear-gradient(rgb(255, 4, 6), #ff6674);
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -30,6 +30,7 @@ body {
 
   header > nav {
     position: fixed;
+    z-index: 1;
 
     width: 100%;
     height: 5vh;
@@ -71,6 +72,10 @@ body {
     padding: 5%;
     text-decoration: none;
     border-bottom: 1px solid darkgray;
+  }
+
+  nav details a:hover {
+    background-color: #faa9b0;
   }
 
   nav summary {
@@ -123,6 +128,10 @@ body {
     height: 20px;
   }
 
+  .about figcaption {
+    display: none;
+  }
+
   h1 {
     font-weight: 500;
     font-size: 55px;
@@ -141,6 +150,8 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+
+    position: relative;
   }
 
   main > section {
@@ -150,6 +161,38 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+  }
+
+  main > section:nth-child(1) {
+    border-radius: 50%;
+    position: absolute;
+    position: fixed;
+    background-color: rgba(103, 6, 6, 0.568);
+    width: 7vh;
+    height: 7vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+
+    padding: 0;
+
+    right: 2%;
+    bottom: 2%;
+  }
+
+  main > section:nth-child(1) a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
   }
 
   main > section > article {
@@ -320,6 +363,10 @@ body {
     color: black;
   }
 
+  .social a:hover {
+    text-decoration: underline;
+  }
+
   .social i {
     padding: 2%;
   }
@@ -334,6 +381,41 @@ body {
 
 @media (min-width:700px) {
 
+  nav aside {
+    padding-left: 10%;
+    width: 20px;
+    height: 40px;
+    background-size: contain;
+  }
+
+  nav details li {
+    font-size: 25px;
+  }
+
+  header > nav {
+  height: 6vh;
+  }
+
+  header summary {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 67px;
+  }
+
+  header p {
+    font-size: 30px;
+    font-weight: 200;
+  }
+
+  header > section a {
+    padding: 2%;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+  }
+
   main > section {
     background-color: white;
     padding: 5%;
@@ -347,12 +429,25 @@ body {
   input, textarea {
       padding: 2%;
   }
+
+  main > section:nth-child(1)  {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  .contact > section > form {
+    row-gap: 10px;
+  }
 }
 
 @media (min-width:1000px) {
 
   details {
     display: none;
+  }
+
+  details a {
+    font-size: 30px;
   }
 
   nav {
@@ -410,6 +505,17 @@ body {
     width: 30%;
   }
   
+  .about figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #ff6674;
+    text-align: center;
+    color: white;
+  }
+  
   .about > section > article {
     width: 65%;
     justify-content: center;
@@ -426,6 +532,11 @@ body {
     width: 30%;
   }
   
+  .project img {
+    height: 200px;
+    object-fit: contain;
+  }
+
   .education > section > article {
     width: 22%;
     padding: 1%;
@@ -444,4 +555,9 @@ body {
   .contact > section > form {
     row-gap: 15px;
   }
+
+  table {
+    font-size: 18px;
+  }
+
 }
