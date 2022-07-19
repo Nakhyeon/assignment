@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --DefaultColor : #ff0406 ;
+  --gradiColor : #ff6674 ;
+}
+
+html {
+  transition: smooth;
+}
+
+body {
+  background:linear-gradient(#ff0406, #ff6674);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (min-width:300px) {
+  header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 300px;
+  }
+
+  header > nav {
+    display: none;
+    position: absolute;
+  }
+
+  header > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: white;
+  }
+
+  header p {
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  header i {
+    padding: 2%;
+    font-size: 25px;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 50px;
+  }
+
+  h6 {
+    width: 70%;
+    border-bottom: 2px solid orange;
+  }
+
+  main {
+    padding-left: 3%;
+    padding-right: 3%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  main > section {
+    background-color: white;
+
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  main > section > article {
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+
+  footer {
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    height: 100px;
+  }
+
+    .about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 1px solid yellow;
+  }
+
+  .about > section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 10px;
+  }
+
+  .about > section > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .project figure {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width:700px) {
+  figure {
+    width: 10%;
+  }
+
+  
+
+}
