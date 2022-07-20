@@ -28,6 +28,7 @@ header, main, footer {
   background-color: rgba(2, 0, 8, 0.7);
 }
 
+/* MOBILE VERSION */
 @media (min-width:300px) {
   header {
     position: relative;
@@ -395,7 +396,9 @@ header, main, footer {
   }
 
 }
+/* MOBILE VERSION END */
 
+/* TABLET VERSION */
 @media (min-width:700px) {
 
   nav aside {
@@ -456,7 +459,9 @@ header, main, footer {
     row-gap: 10px;
   }
 }
+/* TABLET VERSION END*/
 
+/* PC VERSION */
 @media (min-width:1000px) {
   
   details {
@@ -571,5 +576,5 @@ header, main, footer {
   table {
     font-size: 18px;
   }
-
 }
+/* PC VERSION END*/
